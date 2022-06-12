@@ -1,0 +1,47 @@
+.playlistBar{
+    width: 225px;
+    height: fit-content;
+    background: black;
+}
+
+.playlistBar > img {
+    width: auto;
+    height: 100px;
+}
+
+.playlistBar > h3 {
+    color: white;
+    padding-right:25px;
+}
+
+.playlistBar > div {
+    color: white;
+    width: 210px;
+    height: fit-content;
+    text-align: left;
+    margin-left:10px;
+    margin-top: 10px;
+}
+
+#faHome {
+    color: white;
+    padding-right: 15px;
+}
+
+#faSearch {
+    color: white;
+    padding-right: 15px;
+}
+
+#biLibrary{
+    color: white;
+    padding-right: 15px;
+}
+
+#faSearchh3{
+    padding-right:58px;
+}
+
+#biLibraryh3{
+    padding-right:56px;
+}

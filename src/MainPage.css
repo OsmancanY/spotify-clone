@@ -1,0 +1,7 @@
+.mainpage {
+    width: 100%;
+    height: 100vh;
+    background:#646262;
+    position: absolute;
+    overflow-y: overlay;
+}

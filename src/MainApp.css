@@ -1,0 +1,9 @@
+.mainApp {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mainApp_body {
+    display: flex;
+    flex-grow: 1;
+  }
