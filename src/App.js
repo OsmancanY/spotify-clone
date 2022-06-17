@@ -10,7 +10,7 @@ const spotify = new SpotifyWebApi();
 
 function App() {
 
-  const [{token}, dispatch] = useDataLayerValue();
+  const [{ token }, dispatch] = useDataLayerValue();
 
   useEffect(() => {
     const hash = getTokenFromUrl();
@@ -25,7 +25,7 @@ function App() {
 
       spotify.setAccessToken(_token);
 
-      spotify.getMe().then((currentUser)=>{
+      spotify.getMe().then((currentUser) => {
         dispatch({
           type: "SET_USER",
           user: currentUser,
@@ -40,15 +40,19 @@ function App() {
       });
 
 
-      
-    }
-     spotify.getPlaylist("6rqhFgbbKwnb9MLmUQDhG6").then((response) =>
-        dispatch({
-          type: "SET_DISCOVER_WEEKLY",
-          discover_weekly: response,
-        })
-      );
 
+    }
+    // to getting for a special playlist u need to find it //
+    spotify.getPlaylist("37i9dQZEVXcMBZqx8BgDo9").then((response) =>
+      dispatch({
+        type: "SET_DISCOVER_WEEKLY",
+        discover_weekly: response,
+      })
+    );
+    dispatch({
+      type: "SET_SPOTIFY",
+      spotify: spotify,
+    });
 
 
   }, []);

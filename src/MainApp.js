@@ -3,13 +3,13 @@ import "./MainApp.css"
 import MainPage from './MainPage';
 import PlaylistBar from './PlaylistBar';
 
-function MainApp() {
+function MainApp({spotify}) {
      
         return (
             <div className='mainApp'>
                 <div className='mainApp_body'>
                 <PlaylistBar/>
-                <MainPage/>
+                <MainPage spotify={spotify}/>
                 </div>
             </div>
             

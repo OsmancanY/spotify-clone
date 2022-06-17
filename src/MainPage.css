@@ -1,7 +1,46 @@
-.mainpage {
+.mainPage {
     width: 100%;
     height: 100vh;
-    background:#646262;
-    position: absolute;
+    padding: 30px;
+    background: #040404;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+    flex: 0.8;
+    color: white;
     overflow-y: overlay;
+}
+
+.mainPage::-webkit-scrollbar {
+    display: none;
+}
+
+.page_info {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+.page_background {
+    position: absolute;
+    top: 13vh;
+    right: 0;
+    opacity: 0.4;
+    height: 80%;
+    width: 80%;
+    background-color: black;
+  }
+
+.page_info>img {
+    height: 20vw;
+    margin: 0 20px;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+
+    border-radius: 15%;
+}
+
+.page_infoText {
+    flex: 1;
+}
+
+
+.page_infoText>p {
+    font-size: 14px;
 }
